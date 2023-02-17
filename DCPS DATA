@@ -9,6 +9,7 @@ fax varchar(12),
 principal_email varchar(70),
 grades varchar(2),
 ward varchar (1),
+primary_key (school_name)
 );
 
 CREATE TABLE dcps_enrollmentsy2017_18(

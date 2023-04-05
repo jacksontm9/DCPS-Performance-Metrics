@@ -1,6 +1,7 @@
 1. Create  all the tables needed for *education schema* in SQL database
 
-```CREATE TABLE dcps_directory(
+```
+CREATE TABLE dcps_directory(
 dcps_school_id varchar(4),
 school_name varchar(70),
 address varchar(40),

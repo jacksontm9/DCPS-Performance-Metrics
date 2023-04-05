@@ -4,6 +4,6 @@ This project is an exploration of the District of Colombia Public School System'
 
 ### PARCC Assessment (Partnership for Assessment of Readinesss for College & Careers)
 Students in grades 3-8 and highschool take the PARCC exam to assess their comptenency in grade appropriate math, english and science standards set by the Common Core State Standards. For more information about the PARCC Assessment click [here](https://osse.dc.gov/parcc).
-[PARCC data]((https://dcps.dc.gov/publication/dcps-data-set-parcc) was available for school years 2017-18, 2018-19 and 2021-22. I assume students did not take the exam during the 2019-20 and the 2020-21 school year due to COVID-19 restrictions. 
+[PARCC data](https://dcps.dc.gov/publication/dcps-data-set-parcc) was available for school years 2017-18, 2018-19 and 2021-22. I assume students did not take the exam during the 2019-20 and the 2020-21 school year due to COVID-19 restrictions. 
 
 

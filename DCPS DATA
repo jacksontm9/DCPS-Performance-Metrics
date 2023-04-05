@@ -1,4 +1,4 @@
-1. Create  all the tables needed for *education schema* in SQL database
+1. Create  all the tables needed for **education schema** in SQL database
 
 ```
 CREATE TABLE dcps_directory(

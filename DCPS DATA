@@ -1,7 +1,6 @@
 1. Create  all the tables needed for education schema in SQL database
 
 
-``` SQL 
 CREATE TABLE dcps_directory(
 dcps_school_id varchar(4),
 school_name varchar(70),
@@ -14,7 +13,7 @@ grades varchar(2),
 ward varchar (1),
 primary_key (school_name)
 );
-```
+
 
 CREATE TABLE dcps_enrollmentsy2017_18(
 code varchar(3),

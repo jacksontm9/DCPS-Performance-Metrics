@@ -39,7 +39,7 @@ data_year year
 );
 ```
 
-
+```
 CREATE TABLE dcps_enrollmentsy2018_19(
 code varchar(3),
 school_name varchar(70),
@@ -63,7 +63,7 @@ night_students bigint,
 non_cert bigint,
 data_year year
 );
-
+```
 ```
 CREATE TABLE dcps_enrollmentsy2019_20(
 code varchar(3),

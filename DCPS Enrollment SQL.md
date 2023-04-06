@@ -12,7 +12,7 @@ principal_email varchar(70),
 grades varchar(2),
 ward varchar (1),
 );
-
+```
 
 CREATE TABLE dcps_enrollmentsy2017_18(
 code varchar(3),
@@ -37,7 +37,7 @@ night_students bigint,
 non_cert bigint,
 data_year year
 );
-
+```
 
 
 CREATE TABLE dcps_enrollmentsy2018_19(
@@ -63,7 +63,7 @@ night_students bigint,
 non_cert bigint,
 data_year year
 );
-
+```
 
 
 
@@ -90,33 +90,7 @@ night_students bigint,
 non_cert bigint,
 data_year year
 );
-
-
-
-CREATE TABLE dcps_enrollmentsy2020_21(
-code varchar(3),
-school_name varchar(70),
-total_enrolled bigint,
-pk3 bigint,
-pk4 bigint,
-kg bigint,
-grade_1 bigint,
-grade_2 bigint,
-grade_3 bigint,
-grade_4 bigint,
-grade_5 bigint,
-grade_6 bigint,
-grade_7 bigint,
-grade_8 bigint,
-grade_9 bigint,
-grade_10 bigint,
-grade_11 bigint,
-grade_12 bigint,
-night_students bigint,
-non_cert bigint,
-data_year year
-);
-
+```
 
 
 CREATE TABLE dcps_enrollmentsy2020_21(
@@ -142,7 +116,33 @@ night_students bigint,
 non_cert bigint,
 data_year year
 );
+```
 
+
+CREATE TABLE dcps_enrollmentsy2020_21(
+code varchar(3),
+school_name varchar(70),
+total_enrolled bigint,
+pk3 bigint,
+pk4 bigint,
+kg bigint,
+grade_1 bigint,
+grade_2 bigint,
+grade_3 bigint,
+grade_4 bigint,
+grade_5 bigint,
+grade_6 bigint,
+grade_7 bigint,
+grade_8 bigint,
+grade_9 bigint,
+grade_10 bigint,
+grade_11 bigint,
+grade_12 bigint,
+night_students bigint,
+non_cert bigint,
+data_year year
+);
+```
 
 
 CREATE TABLE dcps_enrollmentsy2021_22(
@@ -168,7 +168,7 @@ night_students bigint,
 non_cert bigint,
 data_year year
 );
-
+```
 
 
 CREATE TABLE gis_dcpsdata(

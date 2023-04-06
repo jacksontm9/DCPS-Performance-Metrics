@@ -1,3 +1,12 @@
+1. Create educatio schema
+
+This is where you all of your tables for this project will be. A schema comes in handy when you're working with many tables like I did with this project.
+```
+CREATE SCHEMA education;
+SET search_path = education;
+```
+
+
 2. Create tables needed for education schema
 
 ```

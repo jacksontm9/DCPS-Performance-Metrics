@@ -13,7 +13,7 @@ grades varchar(2),
 ward varchar (1),
 );
 ```
-
+```
 CREATE TABLE dcps_enrollmentsy2017_18(
 code varchar(3),
 school_name varchar(70),
@@ -63,10 +63,8 @@ night_students bigint,
 non_cert bigint,
 data_year year
 );
+
 ```
-
-
-
 CREATE TABLE dcps_enrollmentsy2019_20(
 code varchar(3),
 school_name varchar(70),
@@ -92,7 +90,7 @@ data_year year
 );
 ```
 
-
+```
 CREATE TABLE dcps_enrollmentsy2020_21(
 code varchar(3),
 school_name varchar(70),
@@ -118,7 +116,7 @@ data_year year
 );
 ```
 
-
+```
 CREATE TABLE dcps_enrollmentsy2020_21(
 code varchar(3),
 school_name varchar(70),
@@ -144,7 +142,7 @@ data_year year
 );
 ```
 
-
+```
 CREATE TABLE dcps_enrollmentsy2021_22(
 code varchar(3),
 school_name varchar(70),
@@ -170,7 +168,7 @@ data_year year
 );
 ```
 
-
+```
 CREATE TABLE gis_dcpsdata(
 address varchar(70)
 city text

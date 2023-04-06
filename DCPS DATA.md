@@ -330,7 +330,7 @@ FROM education.gis_dcpsdata gis
   
   4. CREATE TEMPORTARY TABLE
 
-After joining the tables, we're left with a large table of raw enrollment data. It's good to have to reference throughout the project, but with a CTE command, we can create a table that aggregrates the enrollment data by school and school year. You can al
+After joining the tables, we're left with a large table of raw enrollment data. It's good to have to reference throughout the project, but with a CTE command, we can use aggregate functions to find sums, averages, counts
 
 ```
 WITH five_year_enrollment AS (SELECT e17.code, e17.school_name, e17.data_year SY2017, sum(e17.total_enrolled) SY2017total_enrollment, e18.school_year SY2018, 
@@ -356,3 +356,27 @@ avg(SY2020total_enrollment)::numeric (3,0) SY2020_21avg_enrollment,
 avg(SY2021total_enrollment)::numeric (3,0) SY2021_22avg_enrollment
 FROM five_year_enrollment;
 ```
+
+5. CREATE CROSSTAB OF 5 YEAR ENROLLMENT
+```
+SELECT * 
+FROM crosstab('SELECT school_name,
+			   school_year,
+			   sum(total_enrolled)
+		FROM education.aggregated_enrollment
+		GROUP BY school_name, school_year
+		ORDER BY school_name',
+
+		'SELECT school_year
+		 FROM education.aggregated_enrollment
+		 GROUP BY school_year
+		 ORDER BY school_year')
+
+AS (school_name varchar(100),
+	SY2017_18 int,
+	SY2018_19 int,
+	SY2019_20 int,
+	SY2020_21 int,
+	SY2021_22 int);
+```
+

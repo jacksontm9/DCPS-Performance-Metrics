@@ -328,7 +328,7 @@ FROM education.gis_dcpsdata gis
 	USING (code);
   ```
   
-  4. CREATE TEMPORTARY TABLE/.
+  4. CREATE TEMPORTARY TABLE
 
 After joining the tables, we're left with a large table of raw enrollment data. It's good to have to reference throughout the project, but with a CTE command, we can create a table that aggregrates the enrollment data by school and school year. You can al
 

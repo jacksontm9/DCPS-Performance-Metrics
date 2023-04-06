@@ -337,7 +337,7 @@ FROM education.gis_dcpsdata gis
   
   5. CREATE TEMPORTARY TABLE
 
-After joining the tables, we're left with a large table of raw enrollment data. It's good to have to reference throughout the project, but with a CTE command, we can use the ##AVG() function## to find the average enrollment of each school year.
+After joining the tables, we're left with a large table of raw enrollment data. It's good to have to reference throughout the project, but with a CTE command, we can use the **avg() function** to find the average enrollment of each school year.
 
 ```
 WITH five_year_enrollment AS (SELECT e17.code, e17.school_name, e17.school_year SY2017, sum(e17.total_enrolled) SY2017total_enrollment, e18.school_year SY2018, sum(e18.total_enrolled) SY2018total_enrollment, e19.school_year SY2019, sum(e19.total_enrolled) SY2019total_enrollment, e20.school_year SY2020, sum(e20.total_enrolled) SY2020total_enrollment, e21.school_year SY2021, sum(e21.total_enrolled) SY2021total_enrollment
@@ -363,7 +363,7 @@ FROM five_year_enrollment;
 
 6. CREATE CROSSTAB OF 5 YEAR ENROLLMENT
 
-You can take the data a step further with a ##crosstab() function## to further break down the data. The query below will return the number of students enrolled by school and school year. 
+You can take the data a step further with a **crosstab() function** to further break down the data. The query below will return the number of students enrolled by school and school year. 
 ```
 SELECT * 
 FROM crosstab('SELECT school_name,

@@ -1,4 +1,4 @@
-1. Create educatio schema
+1. Create education schema
 
 This is where you all of your tables for this project will be. A schema comes in handy when you're working with many tables like I did with this project.
 ```

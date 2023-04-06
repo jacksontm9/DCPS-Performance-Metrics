@@ -1,4 +1,4 @@
-1. Create tables needed for education schema
+2. Create tables needed for education schema
 
 ```
 CREATE TABLE dcps_directory(
@@ -180,7 +180,7 @@ latitude numeric(10,8)
 ```
 
 
-2. Import data from excel and csv files
+3. Import data from excel and csv files
 ```
 COPY dcps_directory
 FROM '/Users/terrinaj/Desktop/DCPS Data/DCPS school directory.csv'
@@ -213,7 +213,7 @@ WITH(FORMAT CSV, HEADER);
 
 
 
-3. Join tables to include all necessary enrollment information
+4. Join tables to include all necessary enrollment information
 ```
 SELECT
      gis.latitude,
@@ -326,7 +326,7 @@ FROM education.gis_dcpsdata gis
 	USING (code);
   ```
   
-  4. CREATE TEMPORTARY TABLE
+  5. CREATE TEMPORTARY TABLE
 
 After joining the tables, we're left with a large table of raw enrollment data. It's good to have to reference throughout the project, but with a CTE command, we can use the ##AVG() function## to find the average enrollment of each school year.
 
@@ -352,7 +352,7 @@ avg(SY2021total_enrollment)::numeric (3,0) SY2021_22avg_enrollment
 FROM five_year_enrollment;
 ```
 
-5. CREATE CROSSTAB OF 5 YEAR ENROLLMENT
+6. CREATE CROSSTAB OF 5 YEAR ENROLLMENT
 
 You can take the data a step further with a ##crosstab() function## to further break down the data. The query below will return the number of students enrolled by school and school year. 
 ```

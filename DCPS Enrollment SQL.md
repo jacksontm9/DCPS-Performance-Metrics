@@ -225,7 +225,7 @@ WITH(FORMAT CSV, HEADER);
 4. Join tables to include all necessary enrollment information
 ```
 SELECT
-     gis.latitude,
+           gis.latitude,
 	   gis.longitude,
 	   d.school_name,
 	   d.ward,

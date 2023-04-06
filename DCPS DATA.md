@@ -241,7 +241,7 @@ SELECT
 	   e17.grade_12 g12_17,
 	   e17.night_students night_students_17,
 	   e17.non_cert non_cert_17,
-	   e17.data_year data_year17,
+	   e17.school_year SY2017,
 	   e18.pk3 pk3_18,
 	   e18.pk4 pk4_18,
 	   e18.kg kg_18,

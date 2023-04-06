@@ -12,8 +12,8 @@ principal_email varchar(70),
 grades varchar(2),
 ward varchar (1),
 );
-```
-```
+
+
 CREATE TABLE dcps_enrollmentsy2017_18(
 code varchar(3),
 school_name varchar(70),
@@ -37,10 +37,9 @@ night_students bigint,
 non_cert bigint,
 data_year year
 );
-```
 
 
-```
+
 CREATE TABLE dcps_enrollmentsy2018_19(
 code varchar(3),
 school_name varchar(70),
@@ -64,10 +63,10 @@ night_students bigint,
 non_cert bigint,
 data_year year
 );
-```
 
 
-```
+
+
 CREATE TABLE dcps_enrollmentsy2019_20(
 code varchar(3),
 school_name varchar(70),
@@ -91,9 +90,9 @@ night_students bigint,
 non_cert bigint,
 data_year year
 );
-```
 
-```
+
+
 CREATE TABLE dcps_enrollmentsy2020_21(
 code varchar(3),
 school_name varchar(70),
@@ -117,9 +116,9 @@ night_students bigint,
 non_cert bigint,
 data_year year
 );
-```
 
-```
+
+
 CREATE TABLE dcps_enrollmentsy2020_21(
 code varchar(3),
 school_name varchar(70),
@@ -143,9 +142,9 @@ night_students bigint,
 non_cert bigint,
 data_year year
 );
-```
 
-```
+
+
 CREATE TABLE dcps_enrollmentsy2021_22(
 code varchar(3),
 school_name varchar(70),
@@ -169,9 +168,9 @@ night_students bigint,
 non_cert bigint,
 data_year year
 );
-```
 
-```
+
+
 CREATE TABLE gis_dcpsdata(
 address varchar(70)
 city text
@@ -328,3 +327,31 @@ FROM education.gis_dcpsdata gis
 	LEFT JOIN education.dcps_enrollmentsy2021_22 e21
 	USING (code);
   ```
+  
+  4. CREATE TEMPORTARY TABLE 
+After joining the tables, we're left with a large table of raw enrollment data. It's good to have to reference throughout the project, but with a CTE command, we can create a table that aggregrates the enrollment data by school and school year. You can al
+
+```
+WITH five_year_enrollment AS (SELECT e17.code, e17.school_name, e17.data_year SY2017, sum(e17.total_enrolled) SY2017total_enrollment, e18.school_year SY2018, 
+		sum(e18.total_enrolled) SY2018total_enrollment, e19.school_year SY2019, sum(e19.total_enrolled) SY2019total_enrollment,
+		e20.school_year SY2020, sum(e20.total_enrolled) SY2020total_enrollment, e21.school_year SY2021,
+		sum(e21.total_enrolled) SY2021total_enrollment
+FROM education.dcps_enrollmentsy2017_18 e17
+  	LEFT JOIN education.dcps_enrollmentsy2018_19 e18
+		USING (code)	
+	LEFT JOIN education.dcps_enrollmentsy2019_20 e19
+		USING (code)
+	LEFT JOIN education.dcps_enrollmentsy2020_21 e20
+		USING (code)
+	LEFT JOIN education.dcps_enrollmentsy2021_22 e21
+		USING (code)
+GROUP BY e17.code, e17.school_name, SY2017, SY2018, SY2019, SY2020, SY2021
+ORDER BY SY2017total_enrollment, SY2018total_enrollment, SY2019total_enrollment, SY2020total_enrollment, SY2021total_enrollment  DESC)
+
+SELECT avg(SY2017total_enrollment)::numeric(3,0) SY2017_18avg_enrollment, 
+avg(SY2018total_enrollment)::numeric (3,0) SY2018_19avg_enrollment, 
+avg(SY2019total_enrollment)::numeric (3,0) SY2019_20avg_enrollment, 
+avg(SY2020total_enrollment)::numeric (3,0) SY2020_21avg_enrollment, 
+avg(SY2021total_enrollment)::numeric (3,0) SY2021_22avg_enrollment
+FROM five_year_enrollment;
+```

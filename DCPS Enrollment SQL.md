@@ -1,6 +1,5 @@
 1. Create education schema
-
-This is where you all of your tables for this project will be. A schema comes in handy when you're working with many tables like I did with this project.
+This will be where all of our tables for this project are contained. When dealing with many tables, a schema can be useful in keeping your tables organized. 
 ```
 CREATE SCHEMA education;
 SET search_path = education;

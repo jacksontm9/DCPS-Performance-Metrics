@@ -1,4 +1,4 @@
-1. Create your database schema; mine is called ##education##.
+1. Create your database schema; mine is called **education**.
 This will be where all of our tables for this project are contained. When dealing with many tables, a schema can be useful in keeping your tables organized. 
 ```
 CREATE SCHEMA education;
@@ -188,7 +188,7 @@ latitude numeric(10,8)
 ```
 
 
-3. Import data from excel and csv files
+3. Import cleaned data from csv files
 ```
 COPY dcps_directory
 FROM '/Users/terrinaj/Desktop/DCPS Data/DCPS school directory.csv'
@@ -219,9 +219,22 @@ FROM '/Users/terrinaj/Desktop/DCPS Data/Coordinates.csv'
 WITH(FORMAT CSV, HEADER);
 ```
 
+4. **ALTER** gis_dcpsdata table to add a new column with a  *geography* data type. This new column will hold points, and in this specific case, our longituge and latitude points for each school in the DCPS system. Then **UPDATE** the new column to reference WGS 84 coordinate system.
+
+```
+ALTER TABLE gis_dcpsdata ADD COLUMN geog_point geography(POINT, 4326);
+
+UPDATE gis_dcpsdata
+SET geog_point = 
+	ST_SRID(ST_MakePoint(longitude,latitude)::geogrpahy,4326;
+```
 
 
-4. Join tables to include all necessary enrollment information
+5. Add each table to the educaton schema
+
+
+
+6. Join tables to include all necessary enrollment information
 ```
 SELECT
            gis.latitude,
@@ -334,9 +347,9 @@ FROM education.gis_dcpsdata gis
 	USING (code);
   ```
   
-  5. CREATE TEMPORTARY TABLE
+  7. Create a temporary table to extract desired data
 
-After joining the tables, we're left with a large table of raw enrollment data. It's good to have to reference throughout the project, but with a CTE command, we can use the **avg() function** to find the average enrollment of each school year.
+After joining the tables, we're left with a large table of raw enrollment data. It's good to have to reference throughout the project, but with a CTE command, we can use the **avg() function** to find the average enrollment of each school year. 
 
 ```
 WITH five_year_enrollment AS (SELECT e17.code, e17.school_name, e17.school_year SY2017, sum(e17.total_enrolled) SY2017total_enrollment, e18.school_year SY2018, sum(e18.total_enrolled) SY2018total_enrollment, e19.school_year SY2019, sum(e19.total_enrolled) SY2019total_enrollment, e20.school_year SY2020, sum(e20.total_enrolled) SY2020total_enrollment, e21.school_year SY2021, sum(e21.total_enrolled) SY2021total_enrollment
@@ -360,7 +373,7 @@ avg(SY2021total_enrollment)::numeric (3,0) SY2021_22avg_enrollment
 FROM five_year_enrollment;
 ```
 
-6. CREATE CROSSTAB OF 5 YEAR ENROLLMENT
+6. Create crosstab of a each school's enrollment across for each school year.
 
 You can take the data a step further with a **crosstab() function** to further break down the data. The query below will return the number of students enrolled by school and school year. 
 ```

@@ -1,6 +1,6 @@
 # DCPS Peformance Metrics 
 
-This project is an exploration of the District of Colombia Public School System's overall perfomance. For context, DCPS is classified as a large school system. DCPS publishes annual reports of several performance measures, but for the purposes of this project I analyzed PARCC assessment data, attendance data and enrollment data for academic school years 2017-2021. Using SQL I created ad hoc queries to uncover insights about DCPS's performance. 
+This project is an exploration of the District of Colombia Public School System's overall perfomance. For context, DCPS is classified as a large school system with over 100 schools, 40,000 students and 4,000 faculty members. DCPS publishes annual reports of several performance measures, but for the purposes of this project I analyzed PARCC assessment data, attendance data and enrollment data for academic school years 2017-2021. Using SQL I created ad hoc queries to uncover insights about DCPS's performance. 
 
 #### PARCC Assessment (Partnership for Assessment of Readinesss for College & Careers)
 ---

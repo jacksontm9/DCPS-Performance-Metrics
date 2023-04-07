@@ -1,4 +1,4 @@
-1. Create education schema
+1. Create your database schema; mine is called ##education##.
 This will be where all of our tables for this project are contained. When dealing with many tables, a schema can be useful in keeping your tables organized. 
 ```
 CREATE SCHEMA education;
@@ -385,3 +385,4 @@ AS (school_name varchar(100),
 	SY2021_22 int);
 ```
 
+Now, we have our education schema that contains all of our raw data. To access the csv files used to vizulaize this data, click the ##CSV Files## folder.

@@ -15,7 +15,10 @@ Visit my Tableau to see the [data viz](https://public.tableau.com/views/DCPS2021
 ---
 
 
-
+|Projects Title| Description | Project Link
+| :---        |    :----:   |          ---: |
+| DCPS Performance Metrics |  project explores standardized test scores, attendance and enrollment data across the DCPS school system | [DCPS Performance Metrics Data Viz] (https://public.tableau.com/views/DCPS2021-22Enrollment/DCPSSY2021-22EnrollmentData?:language=en-US&:display_count=n&:origin=viz_share_link)  |
+| Department Metrics| This is anonymous survey data for each of 17 departments at a large public university. The        | [CHS Department Evaluation]       |
 
 
 

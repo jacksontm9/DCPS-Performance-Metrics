@@ -1,3 +1,8 @@
+Hi, I'm Terrina. 
+
+
+
+
 |Projects Title| Description | Project Link
 | :---:       |    :----  |          :---: |
 | DCPS Attendance | This  project explores standardized test scores, attendance and enrollment data across the DCPS school system | [DCPS Performance Metrics Data Viz](https://public.tableau.com/views/DCPS2021-22Enrollment/DCPSSY2021-22EnrollmentData?:language=en-US&:display_count=n&:origin=viz_share_link)  |

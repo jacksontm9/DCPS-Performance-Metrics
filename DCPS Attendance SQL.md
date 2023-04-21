@@ -44,4 +44,4 @@
     Absences_eleventotwenty,
     Absences_twentyoneplus)
     ```
-2. Copy CSV files into tables with *COPY* statement
+2. Copy CSV files into tables with **COPY** statement

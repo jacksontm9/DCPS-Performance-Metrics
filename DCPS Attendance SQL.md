@@ -107,6 +107,6 @@
      UPDATE truancy_SY2021_22
      SET school_year = '8/31/2021'
    ```
-4. Join tables to get a master sheet of raw data
+ 4. Join tables to get a master sheet of raw data
 
 

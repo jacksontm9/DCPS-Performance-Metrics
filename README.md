@@ -1,5 +1,4 @@
-Hi, I'm Terrina. Below is a list of some of the data projects I've done. You'll see some of my skills in data cleaning, ETL, and data vizualization. 
-
+Hi, I'm Terrina. Below is a list of some of the data projects I've done. 
 
 ## **Data Viz**
 
@@ -10,11 +9,9 @@ Hi, I'm Terrina. Below is a list of some of the data projects I've done. You'll 
 |DCPS Truancy Data | Data on the different subgroubs of trunacy | [DCPS Truancy Data Viz](https://public.tableau.com/views/PARCCassessment/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
 | Department Metrics| This is anonymous survey data for each of 17 departments at a large public university. The survey is meant to evaluate management, interpersonal skills, communication and leadership for each department.         | CHS Department Evaluation    |
 
-## **Data Clean Up**
+## **Cleaning Dirty Data**
 |Projects Title| Description | Project Link
 | :---:       |    :----  |          :---: |
-
-
 
 ---
 

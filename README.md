@@ -9,9 +9,6 @@ Hi, I'm Terrina. Below is a list of some of the data projects I've done.
 |DCPS Truancy Data | Data on the different subgroubs of trunacy | [DCPS Truancy Data Viz](https://public.tableau.com/views/PARCCassessment/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
 | Department Metrics| This is anonymous survey data for each of 17 departments at a large public university. The survey is meant to evaluate management, interpersonal skills, communication and leadership for each department.         | CHS Department Evaluation    |
 
-## **Cleaning Dirty Data**
-|Projects Title| Description | Project Link
-| :---:       |    :----  |          :---: |
 
 ---
 

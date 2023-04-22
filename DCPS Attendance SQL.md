@@ -108,5 +108,60 @@
      SET school_year = '8/31/2021'
    ```
  4. Join tables to get a master sheet of raw data
+ 
+```
+SELECT School_name, 
+        Total_absences, 
+        Absences_onetofive,
+        Absences_sixtoten,	
+        Absences_eleventotwenty,
+        Absences_twentyoneplus,
+        school_year
+FROM truancy_SY2017_18
+
+UNION ALL
+
+SELECT School_name, 
+        Total_absences, 
+        Absences_onetofive,
+        Absences_sixtoten,	
+        Absences_eleventotwenty,
+        Absences_twentyoneplus,
+        school_year
+FROM truancy_SY2018_19
+
+UNION ALL 
+
+SELECT School_name, 
+        Total_absences, 
+        Absences_onetofive,
+        Absences_sixtoten,	
+        Absences_eleventotwenty,
+        Absences_twentyoneplus,
+        school_year
+FROM truancy_SY2019_20
+
+UNION ALL 
+
+SELECT School_name, 
+        Total_absences, 
+        Absences_onetofive,
+        Absences_sixtoten,	
+        Absences_eleventotwenty,
+        Absences_twentyoneplus,
+        school_year
+FROM truancy_SY2020_21
+
+UNION ALL
+
+SELECT School_name, 
+        Total_absences, 
+        Absences_onetofive,
+        Absences_sixtoten,	
+        Absences_eleventotwenty,
+        Absences_twentyoneplus,
+        school_year
+FROM truancy_SY2021_22
+```
 
 

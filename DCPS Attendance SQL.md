@@ -70,7 +70,7 @@
     FROM '/Users/terrinaj/Desktop/2021-22 Truancy.csv/'
     WITH (FORMAT CSV, HEADER)
     ```
-3.  USE the **ALTER** and **UPDATE** statement to include appropriate school year in each table
+3.  USE the **ALTER TABLE** and **UPDATE** statements to include appropriate school year in each table
     
     ``` 
      ALTER TABLE truancy_SY2017_18

@@ -1,7 +1,7 @@
-Hi, I'm Terrina. 
+Hi, I'm Terrina. Below is a list of some of the data projects I've done. You'll see some of my skills in data cleaning, ETL, and data vizualization.
 
 
-
+**Data Viz**
 
 |Projects Title| Description | Project Link
 | :---:       |    :----  |          :---: |

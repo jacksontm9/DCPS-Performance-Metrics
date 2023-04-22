@@ -1,4 +1,4 @@
-1. Create all the tables needed for the PARCC project
+1. Create all the tables needed for the DCPS Truancy project
     ```
     CREATE TABLE truancy_SY2017_18 (
     School_Name int,

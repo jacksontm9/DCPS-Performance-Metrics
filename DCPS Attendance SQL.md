@@ -109,5 +109,4 @@
    ```
 4. Join tables to get a master sheet of raw data
 
-```
 

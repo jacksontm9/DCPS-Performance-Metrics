@@ -70,7 +70,7 @@
     FROM '/Users/terrinaj/Desktop/2021-22 Truancy.csv/'
     WITH (FORMAT CSV, HEADER)
     ```
-3. Update Tables to include school year
+3.  USE the **ALTER** and **UPDATE** statement to include appropriate school year in each table
     
     ``` 
      ALTER TABLE truancy_SY2017_18
@@ -101,7 +101,7 @@
      SET school_year = '8/31/2020'
     ```
     ```
-    ALTER TABLE truancy_SY2021_22
+     ALTER TABLE truancy_SY2021_22
      ADD COLUMN school_year date
      
      UPDATE truancy_SY2021_22

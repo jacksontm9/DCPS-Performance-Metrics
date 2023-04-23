@@ -134,19 +134,26 @@ ADD COLUMN school_year date
 UPDATE PARCC_2021_22
 SET school_year = '8/31/2021'
 ```
-4. Join all the tables with a **UNION ALL** statement
+4. USE **CTE** to filter tables for truancy totals and join temporary tables to get a master sheet
 ```
-SELECT * 
+WITH PARCC_2017_18 AS
+(SELECT * 
 FROM PARCC_2017_18
+WHERE grade = 'ALL'),
 
-UNION ALL
+PARCC_2018_19 AS
+(SELECT * FROM PARCC_2018_19
+WHERE grade = 'ALL'),
 
-SELECT * 
-FROM PARCC_2018_19
-
-UNION ALL
-
-SELECT * 
+PARCC_2021_22 AS
+(SELECT * 
 FROM PARCC_2021_22
-```
+WHERE grade = 'ALL')
 
+SELECT * FROM PARCC_2017_18
+UNION ALL
+SELECT * FROM PARCC_2018_19
+UNION ALL
+SELECT * FROM PARCC_2021_22
+
+```

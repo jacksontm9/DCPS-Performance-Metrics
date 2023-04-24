@@ -6,7 +6,7 @@ Hi, I'm Terrina. Below is a list of some of the data projects I've done.
 | :---:       |    :----  |          :---: |
 | DCPS Enrollment | Exploration of DCPS enrollment for SY 2021-22 trends by school, school type and ward. Potential tool for different stakeholders. | [DCPS Enrollment Data Viz](https://public.tableau.com/views/DCPS2021-22Enrollment/DCPSSY2021-22EnrollmentData?:language=en-US&:display_count=n&:origin=viz_share_link)  |
 | DCPS PARCC Data | Exploration of DCPS PARCC (Partnership for the Assessment of Readiness for College and Careers) Assessment data for SY 2017-18, 2018-19, 2021-22. Aggregates PARCC data by school, school year and ward. Potential tool for different stakeholders. | [DCPS PARCC Assessment Data Viz](https://public.tableau.com/views/PARCCdata/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link) |
-|DCPS Truancy Data | Exploration of DCPS Truancy for school years 2017-18, 2018-19, 2019-20, 2020-21, and 2021-22. Groups data by school year and school ward.| [DCPS Truancy Data Viz](https://public.tableau.com/views/PARCCassessment/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)|
+|DCPS Truancy Data | Exploration of DCPS truancy for school years 2017-18, 2018-19, 2019-20, 2020-21, and 2021-22. Groups data by school year and school ward.| [DCPS Truancy Data Viz](https://public.tableau.com/views/PARCCassessment/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)|
 
 ## **DATA Cleaning and Queries**
 |Project Title| SQL Skills|

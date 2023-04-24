@@ -1,4 +1,4 @@
-Hi, I'm Terrina. Below is a list of some of the data projects I've done. 
+Hi, I'm Terrina. I am an entry level data analyst with special interest in education policy as well as student and faculty outcomes. Below is a list of some of the data analysis and visulaization projects I've done. Outside of the education sector, I'm also interested in pop culture and literature data. 
 
 ## **Data Viz**
 

@@ -12,7 +12,7 @@ Hi, I'm Terrina. Below is a list of some of the data projects I've done.
 |Project Title| Description | SQL Skills|
 | :---:       |    :----  |          :---: |
 |[DCPS Enrollment](https://github.com/jacksontm9/Terrina-s-Data-Analysis/blob/main/DCPS%20Enrollment%20SQL.md)| Extract data from published excel files into SQL database to create mastersheet. Clean data to remove string data that would hinder aggregrate calculations | Table Joins, CTEs, Aggregate Functions, Spacial Reference|
-|[DCPS PARCC Data]()| Extract data from published excel files into SQL database to create mastersheet. Clean data to remove string data that would hinder aggregate calculations.| Table Joins, CTEs, Aggregate Functions, Altering tables|
+|[DCPS PARCC Data](https://github.com/jacksontm9/Terrina-s-Data-Analysis/blob/main/DCPS%20PARCC%20SQL.md)| Extract data from published excel files into SQL database to create mastersheet. Clean data to remove string data that would hinder aggregate calculations.| Table Joins, CTEs, Aggregate Functions, Altering tables|
 |DCPS Truancy Data| Extract data from published excel files into SQL database to create mastersheet. Clean data to remove string data that would hinder aggregate calculations | Table Joins, CTEs, Aggregate Functions, Altering tables|
 ---
 

@@ -11,9 +11,9 @@ Hi, I'm Terrina. Below is a list of some of the data projects I've done.
 ## **DATA Cleaning and Queries**
 |Project Title| Description | SQL Skills|
 | :---:       |    :----  |          :---: |
-|DCPS Enrollment| Extract data from published excel files into SQL database to create mastersheet. Clean data to remove string data that would hinder aggraget calculations | Table Joins, CTEs, Aggregate Functions, Spacial Reference|
-|DCPS PARCC Data| Extract data from published excel files into SQL database to create mastersheet. Clean data to remove string data that would hinder aggraget calculations.| Table Joins, CTEs, Aggregate Functions, Altering tables|
-|DCPS Truancy Data| Extract data from published excel files into SQL database to create mastersheet. Clean data to remove string data that would hinder aggraget calculations | Table Joins, CTEs, Aggregate Functions, Altering tables|
+|DCPS Enrollment| Extract data from published excel files into SQL database to create mastersheet. Clean data to remove string data that would hinder aggregrate calculations | Table Joins, CTEs, Aggregate Functions, Spacial Reference|
+|DCPS PARCC Data| Extract data from published excel files into SQL database to create mastersheet. Clean data to remove string data that would hinder aggregate calculations.| Table Joins, CTEs, Aggregate Functions, Altering tables|
+|DCPS Truancy Data| Extract data from published excel files into SQL database to create mastersheet. Clean data to remove string data that would hinder aggregate calculations | Table Joins, CTEs, Aggregate Functions, Altering tables|
 ---
 
 

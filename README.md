@@ -12,11 +12,11 @@ Hi, I'm Terrina. I am an entry level data analyst with special interest in educa
 |Project Title| SQL Skills|
 | :---:|    :----|        
 |[DCPS Enrollment](https://github.com/jacksontm9/Terrina-s-Data-Analysis/blob/main/DCPS%20Enrollment%20SQL.md)| 
--Data Definition
--Data Manipulation 
--Table Joins 
--CTEs 
--Spacial Reference|
+  -Data Definition
+  -Data Manipulation 
+  -Table Joins 
+  -CTEs 
+  -Spacial Reference|
 |[DCPS PARCC Data](https://github.com/jacksontm9/Terrina-s-Data-Analysis/blob/main/DCPS%20PARCC%20SQL.md)| Data Definition, Data Manipulation,Table Joins, CTEs|
 |[DCPS Truancy Data](https://github.com/jacksontm9/Terrina-s-Data-Analysis/blob/main/DCPS%20Truancy%20SQL.md)| Data Definition, Data Manipulation,Table Joins, CTEs|
 ---
